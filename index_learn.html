@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New RTA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/convert.css">
+    <link rel="stylesheet" href="css/form.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+<body>
+<div class="main">
+    <header>
+        <div class="wrapper">
+            <img alt="logo" src="img/logo_new.png"/>
+            <div class="enter">
+                <a id="go3" href="#">Вход</a>
+                <a id="go2" href="#">Регистрация</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <li class="na_active"><a href="">Обучение</a> </li>
+                <li><a href="">Oблако знаний</a> </li>
+                <li><a href="">Сотрудничество</a> </li>
+                <li><a href="">Об Академии</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="clearfix "></div>
+    <div class="wrapper">
+        <div class="lesson_block">
+            <div class="row">
+                <div class="lesson">
+                    <a href="">
+                        <div>
+                            
+                        </div>
+                        <img alt="" src="img/lesson1.png"/>
+                        <p>
+                            Введение в композиты
+                            <span>
+                                221 час
+                            </span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lesson">
+                    <a href="">
+                    <div>
+                        
+                    </div>
+                    <img alt="" src="img/lesson2.png" />
+                    <p>
+                        Введение в компьютерный <br/>
+                        инжиниринг
+                        <span>
+                            72 часа
+                        </span>
+                    </p>
+                    </a>
+                </div>
+                <div class="lesson">
+                    <a href="">
+                    <div class="free">
+                        <p>
+                            Бесплатно
+                        </p>
+                    </div>
+                    <img alt="" src="img/lesson3.png" />
+                    <p>
+                        Компаундирование полимеров<br/> 
+                        методом двухшнековой<br/>  
+                        экструзии
+                        <span>
+                            221 час
+                        </span>
+                    </p>
+                    </a>                
+                </div>
+            </div>
+            <div class="row">
+                <div class="lesson">
+                    <a href="">
+                    <div class="soon">
+                        <p>Скоро!</p>
+                    </div>
+                    <img alt="" src="img/lesson4.png"/>
+                    <p>
+                        Введение в композиты
+                        <span>
+                            221 час
+                        </span>
+                    </p> 
+                    </a>               
+                </div>
+                <div class="lesson add">
+
+                    <a href="" id="go">
+                        <div>
+                            <div class="pluss"></div>
+                        </div>
+                    
+                    <p>
+                        Предложить свой курс
+
+                    </p>
+                    </a>                
+                </div>                
+            </div>
+        </div>
+    </div>
+<div class="clerfix_footer"></div>    
+</div>
+
+<footer>
+    <div class="wrapper">
+        <p>
+            © 2014, Открытый технологический университет.
+        </p>
+        <a href="">
+            <img alt="" src="img/logo_bottom.png"/>
+        </a>
+    </div>
+    <div class="clearfix"></div>
+</footer>
+
+<div id="overlay"></div>
+
+
+<div id="modal_form" class="form_wrapper">
+    <a id="modal_close" href="" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+    <div class="form_bg">
+        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <div>
+            <p>Ваше имя</p>
+            <input type="name"  placeholder="">
+        </div>
+        <div>
+            <p>Ваш e-mail</p>
+            <input type="email" placeholder="">
+        </div>
+        <div>
+        <p>
+            Опишите курс
+        </p>
+        <textarea name="comment"
+
+></textarea>
+        </div>
+
+<!--       <div class="chebox">
+        <input id="checkbox1" type="checkbox" name="checkbox" value="1" ><label for="checkbox1">Я преподаватель и хочу вести этот курс</label>
+      </div>
+      <div class="chebox">
+        <input id="checkbox2" type="checkbox" name="checkbox" value="2"><label for="checkbox2">Я хочу пройти этот курс как слушатель</label>
+      </div> -->
+        <div class="chebox">
+
+            <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+            <label for="radio1" class="css-label radGroup1"><span>Я хочу поделиться этим материалом</span></label>
+        </div>
+        <div class="chebox">
+            <input type="radio" name="radiog_lite" id="radio2"class="css-checkbox" checked="checked" />
+            <label for="radio2" class="css-label radGroup1"><span>Мне интересно узнать об этом</span></label>      
+        </div>
+      
+
+            <input type="submit" class="send" value="Предложить">
+        </form>
+    </div>
+</div>
+<!--   lodgin -->
+
+<div id="modal_form_regist" class="form_wrapper reg">
+    <a id="modal_close" href="" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+
+    <div class="form_bg reg">
+        <p>
+            Регистрация
+        </p>
+        <a id="go_enter" href="#">
+            Вход
+        </a>    
+        <div class="clear"></div>
+        <ul class="social_reg">
+            <li id="fb"><a href=""></a></li>
+            <li id="vk"><a href=""></a></li>
+            <li id="tw"><a href=""></a></li>
+            <li id="goo"><a href=""></a></li>
+            <li id="ok"><a href=""></a></li>
+        </ul>        
+        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <div>
+            <p>E-mail</p>
+            <input type="name"  placeholder="">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input type="password" placeholder="">
+        </div>
+
+        <div>
+            <p>Повторите пароль</p>
+            <input type="password" placeholder="">
+        </div>
+
+
+      
+
+            <input type="submit" class="send reg" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+
+<!-- ================ enter =========== -->
+
+<div id="modal_form_enter" class="form_wrapper reg">
+    <a id="modal_close" href="" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+
+    <div class="form_bg reg login">
+        <p >
+            Вход 
+        </p>
+        <a id="to_reg" href="#">
+            Регистрация
+        </a>    
+        <div class="clear"></div>
+        <ul class="social_reg">
+            <li id="fb"><a href=""></a></li>
+            <li id="vk"><a href=""></a></li>
+            <li id="tw"><a href=""></a></li>
+            <li id="goo"><a href=""></a></li>
+            <li id="ok"><a href=""></a></li>
+        </ul>        
+        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <div>
+            <p>E-mail</p>
+            <input type="name"  placeholder="">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input type="password" placeholder="">
+        </div>
+
+        <a id="go6" class="forgo_pass" href="">Забыли пароль?</a>
+
+        <input type="submit" class="send reg log" value="Войти">
+        <div class="clear"></div>
+        </form>
+    </div>
+</div>
+
+<!-- ============= recov =========== -->
+<div id="modal_form_recov" class="form_wrapper reg">
+    <a id="modal_close" href="" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+
+    <div class="form_bg reg recover">
+        <p>
+            Восстановление <br/>
+            пароля
+        </p>
+        <p>
+            Введите е-mail, указанный<br/>
+            при регистрации,<br/>
+            и мы отправим вам письмо<br/>
+            с ссылкой для восстановления
+        </p>  
+        <div class="clear"></div>      
+        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <div>
+            <p>E-mail</p>
+            <input type="name"  placeholder="">
+        </div>
+
+        <a  id="back" class="forgo_pass" href="">Назад</a>
+
+        <input type="submit" class="send reg recov" value="Отправить">
+        <div class="clear"></div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
