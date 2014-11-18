@@ -124,6 +124,10 @@ header .wrapper img {
     margin-left: 2px;
 }
 
+header .wrapper img+img{
+    margin: 0 0 0 44px;
+}
+
 .border_blocin {
     border-top: 1px solid #e6e6e6;
 }

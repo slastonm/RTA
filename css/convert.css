@@ -100,20 +100,24 @@ body {
 }
 
 .wrapper {
+    position: relative;
     width: 1160px;
     margin: 0 auto;
 }
 
 header {
     background: #ffffff;
-    padding-bottom: 18px;
-    padding-top: 21px;
+    padding-bottom: 14px;
+    padding-top: 19px;
 }
 
-header .wrapper img {
+{
     display: block;
     float: left;
     margin-left: 2px;
+}
+header .wrapper img+img{
+    margin: 0 0 0 44px;
 }
 
 header .wrapper .enter {
