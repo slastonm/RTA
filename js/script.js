@@ -215,3 +215,22 @@ $(document).ready(function() {
     })
   }
 });
+
+
+
+
+
+        $(document).ready(function () {
+
+            $('.user').click(function (event) {
+                event.preventDefault();
+                var temp = document.getElementById('user_select').style.display;
+                if (temp =="none" || temp =="") {
+                    $('#user_select').fadeOut(100, function () { $('#user_select').css('display', 'block'); });
+                } else {
+                    $('#user_select').fadeIn(100, function () { $('#user_select').css('display', 'none'); });
+                }
+
+            });
+
+        });
