@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/convert.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>    
+    <script type="text/javascript" src="js/script.js"></script>
+
+
 </head>
 <body>
 <div class="main">
@@ -29,62 +32,35 @@
         <div class="wrapper">
             <ul>
                 <li><a href="">Обучение</a> </li>
-                <li class="na_active"><a href="">Oблако знаний</a> </li>
-                <li><a href="">Сотрудничество</a> </li>
+                <li><a href="">Oблако знаний</a> </li>
+                <li class="na_active"><a href="">Сотрудничество</a> </li>
                 <li><a href="">Об Академии</a> </li>
             </ul>
         </div>
     </nav>
     <div class="clearfix "></div>
     <div class="wrapper">
-        <div class="lesson_block">
-        
-            <div class="row">
-                <div class="lesson">
-                <a href="">
-                    <div >
-                        
-                    </div>
-                    <img alt="" src="img/lesson4.png"/>
-                    <p>
-                        Словарь юного композитора
-
-                    </p> 
-                </a>
-                </div>
-                <div class="lesson">
-                <a href="">
-                    <div>
-                        
-                    </div>
-                    <img alt="" src="img/lesson4.png" />
-                    <p>
-                        Электронная база данных <br/>«Географическая терминология<br/> Европейского севера России»
-
-                    </p> 
-                    </a>               
-                </div>                
-                <div class="lesson add">
-
-                    <a href="" id="go">
-                        <div>
-                            <div class="pluss"></div>
-                        </div>
-                    
-                    <p>
-                        Предложить свой материал
-
-                    </p> 
-                    </a>               
-                </div>                
-            </div>
-        </div>
+       <div class = "contact">
+			<h2>Мы будем рады любым вопросам<br class="cl_1024" /> и предложениям по сотрудничеству</h2>
+			<p>Если вы являетесь обладателем уникального учебного или практического контента, или хотите<br class="cl_1024" /> получить <br /> новые навыки и узнать секреты современного производства
+			   наиболее эффективным образом<br class="cl_1024" /> и в онлайн-формате, <br /> или вам нужно быстро и качественно провести обучение для своих сотрудников, или… <br class="cl_1024" />В общем, любые вопросы <br /> и
+			   предложения по сотрудничеству пишите координатору проекта.</p>
+            <div class="avarka_con"> 
+			<img src="img/ava_cont.png"  alt=""/>
+            </div>   
+			<div class = "contact-adres">
+				<h3>Антонова Елена</h3>
+				<p class="coordinator">Координатор проекта</p>
+				<p><a href="#">antonova@rta.gov.ru</a> <br /> + 7 917 556 28 51</p>
+		   </div>
+	   </div>
     </div>
+    <div class="clerfix_footer"></div> 
+</div>	
+    
 
-<div class="clerfix_footer"></div>    
-</div>
 
-<footer>
+ <footer>
     <div class="wrapper">
         <p>
             © 2014, Открытый технологический университет.
@@ -97,46 +73,10 @@
 </footer>
 <div id="overlay"></div>
 
-
-<div id="modal_form" class="form_wrapper">
-    <a href="" class="close">
-        <img src="img/close.png" alt="">
-    </a>
-    <div class="form_bg">
-        <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
-        <div>
-            <p>Ваше имя</p>
-            <input type="text" name="name"  placeholder="">
-        </div>
-        <div>
-            <p>Ваш e-mail</p>
-            <input type="text" name="email" placeholder="">
-        </div>
-        <div>
-            <p>
-                Опишите материал
-            </p>
-            <textarea name="text"> </textarea>
-        </div>
-
-        <div class="chebox">
-
-            <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
-            <label for="radio1" class="css-label radGroup1"><span>Я хочу поделиться этим материалом</span></label>
-        </div>
-        <div class="chebox">
-            <input type="radio" name="radiog_lite" id="radio2" class=" css-checkbox" checked="checked" />
-            <label for="radio2" class="css-label radGroup1"><span>Мне интересно узнать об этом</span></label>      
-        </div>
-        <input type="submit" class="send" value="Предложить">
-      
-        </form>
-    </div>
-</div>
-
+<!--   lodgin -->
 
 <div id="modal_form_regist" class="form_wrapper reg">
-    <a  href="" class="close">
+    <a  href="#" class="close">
         <img src="img/close.png" alt="">
     </a>
 
@@ -158,7 +98,7 @@
         <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="text" name="email"  placeholder="">
+            <input type="text" name="email" placeholder="">
         </div>
         <div>
             <p>Пароль</p>
@@ -169,9 +109,6 @@
             <p>Повторите пароль</p>
             <input type="password" name="password2" placeholder="">
         </div>
-
-
-      
 
             <input type="submit" class="send reg" value="Зарегистрироваться">
         </form>
@@ -203,7 +140,7 @@
         <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="text" name="email" placeholder="">
+            <input type="text" name="email"  placeholder="">
         </div>
         <div>
             <p>Пароль</p>
@@ -220,7 +157,7 @@
 
 <!-- ============= recov =========== -->
 <div id="modal_form_recov" class="form_wrapper reg">
-    <a href="" class="close">
+    <a id="modal_close" href="" class="close">
         <img src="img/close.png" alt="">
     </a>
 
@@ -239,7 +176,7 @@
         <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="text" name="email" placeholder="">
+            <input type="text" name="email"  placeholder="">
         </div>
 
         <a  id="back" class="forgo_pass" href="">Назад</a>
@@ -249,5 +186,6 @@
         </form>
     </div>
 </div>
+
 </body>
 </html>

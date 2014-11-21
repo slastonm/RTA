@@ -19,10 +19,6 @@
         <div class="wrapper">
             <img alt="logo" src="img/logo_part1.png"/>
             <img alt="logo" src="img/logo_part2.png"/>
-<!--        <div class="enter">
-                <a id="go3" href="#">Вход</a>
-                <a id="go2" href="#">Регистрация</a>
-            </div> -->
             <div class="user">
                 <a href="">
                     <span>
@@ -34,9 +30,9 @@
             <div id="user_select">
 
             <ul>
-                <li><a class="select_cours" href="">Мой профиль</a></li>
-                <li><a class="select_cours" href="">Мои курсы</a></li>
-                <li><a class="select_cours" href="">Выйти</a></li>    
+                <li><a class="select_cours" href="#">Мой профиль</a></li>
+                <li><a class="select_cours" href="#">Мои курсы</a></li>
+                <li><a class="select_cours" href="#">Выйти</a></li>    
             </ul>
             </div>
         </div>
@@ -46,10 +42,10 @@
     <nav>
         <div class="wrapper">
             <ul>
-                <li><a href="">Обучение</a> </li>
-                <li><a href="">Oблако знаний</a> </li>
-                <li><a href="">Сотрудничество</a> </li>
-                <li><a href="">Об Академии</a> </li>
+                <li><a href="#">Обучение</a> </li>
+                <li><a href="#">Oблако знаний</a> </li>
+                <li><a href="#">Сотрудничество</a> </li>
+                <li><a href="#">Об Академии</a> </li>
             </ul>
         </div>
     </nav>
@@ -71,26 +67,26 @@
                     Информация профиля
             </h2>  
         <div class="form_row">
-            <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+            <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
                 <div class="left_form">
                     
                     <div>
                         <p>Имя</p>
-                        <input type="name"  placeholder="">
+                        <input type="text" name="name"  placeholder="">
                     </div>
                     <div>
                         <p>Фамилия</p>
-                        <input type="email" placeholder="">
+                        <input type="text" name="sourname" placeholder="">
                     </div>
                     <div class="birthday">
                         <p>Дата рождения</p>
-                        <input type="email" placeholder="день">
-                        <input type="email" placeholder="месяц">
-                        <input type="email" placeholder="год">
+                        <input type="text" name="day" placeholder="день">
+                        <input type="text" name="month" placeholder="месяц">
+                        <input type="text" name="year" placeholder="год">
                     </div>
                     <div>
                         <p>Место работы</p>
-                        <input type="email" placeholder="">
+                        <input type="text" name="work" placeholder="">
 
                     </div>
                     <button  class="cours_button save"> Сохранить</button>  
@@ -100,15 +96,15 @@
                 <div class="right_form">
                     <div>
                      <p>Страна</p>
-                    <input type="name"  placeholder="">
+                    <input type="text" name="country"  placeholder="">
                     </div>
                     <div>
                     <p>Город</p>
-                    <input type="email" placeholder="">
+                    <input type="text" name="city" placeholder="">
                     </div>
                     <div>
                     <p>В каких областях вы являетесь экспертом?</p>
-                            <textarea name="comment">
+                            <textarea name="text">
                                 
                             </textarea>
                     </div>                    
@@ -119,23 +115,23 @@
 
 
         <div class="form_row">
-            <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+            <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
                 <div class="left_form">
                 <h2 class="course_title2 change">
                     Сменить пароль
                 </h2>  
                     <div>
                         <p>Старый пароль</p>
-                        <input type="password"  placeholder="">
+                        <input type="password" name="old_password" placeholder="">
                     </div>
                     <div>
                         <p>Новый пароль</p>
-                        <input type="password" placeholder="">
+                        <input type="password" name="new_password" placeholder="">
                     </div>
 
                     <div>
                         <p>Повторите новый пароль</p>
-                        <input type="password" placeholder="">
+                        <input type="password"  name="new_password" placeholder="">
 
                     </div>
 
@@ -143,22 +139,22 @@
             
                 </div>
                 </form>
-                <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+                <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
                 <div class="right_form">
                 <h2 class="course_title2 change">
                     Сменить адрес e-mail
                 </h2>                  
                     <div>
                      <p>Текущий e-mail</p>
-                    <input class="block_input" disabled type="name"  value="empty@mail.com">
+                    <input class="block_input" disabled type="text"  value="empty@mail.com">
                     </div>
                     <div>
                     <p>Введите новый e-mail </p>
-                    <input type="email" placeholder="">
+                    <input type="text" name="new_email" placeholder="">
                     </div>
                     <div>
                     <p>Введите пароль</p>
-                    <input type="password" placeholder="">
+                    <input type="password" name="password" placeholder="">
                     </div>  
                      
                      <button class="cours_button save change"> Сменить</button>                  

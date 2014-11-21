@@ -29,19 +29,19 @@
         <div class="wrapper">
             <ul>
                 <li><a href="">Обучение</a> </li>
-                <li><a href="">Oблако знаний</a> </li>
+                <li><a id="email" href="#">Oблако знаний</a> </li>
                 <li><a href="">Сотрудничество</a> </li>
                 <li><a href="">Об Академии</a> </li>
             </ul>
         </div>
     </nav>
-    <div class="clearfix "></div>
+    <div class="clearfix"></div>
     <div class="videos">
         <div class="play">
 
     		<div class="video_bg">
     			<p>Знания, которые изменят все  </p>
-    			<a href=""><img alt="" src="img/butn.png"/></a>
+    			<a href="#"><img alt="" src="img/butn.png"/></a>
     			<p>Cмотреть видео</p>
     		</div>
         </div>
@@ -88,10 +88,11 @@
     <div class="clearfix"></div>
 </footer>
 <div id="overlay"></div>
+<div id="overlay1"></div>
 <!--   lodgin -->
 
 <div id="modal_form_regist" class="form_wrapper reg">
-    <a id="modal_close" href="" class="close">
+    <a  href="#" class="close">
         <img src="img/close.png" alt="">
     </a>
 
@@ -104,25 +105,25 @@
         </a>    
         <div class="clear"></div>
         <ul class="social_reg">
-            <li id="fb"><a href=""></a></li>
-            <li id="vk"><a href=""></a></li>
-            <li id="tw"><a href=""></a></li>
-            <li id="goo"><a href=""></a></li>
-            <li id="ok"><a href=""></a></li>
+            <li class="fb"><a href=""></a></li>
+            <li class="vk"><a href=""></a></li>
+            <li class="tw"><a href=""></a></li>
+            <li class="goo"><a href=""></a></li>
+            <li class="ok"><a href=""></a></li>
         </ul>        
-        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="name"  placeholder="">
+            <input type="text" name="email" placeholder="">
         </div>
         <div>
             <p>Пароль</p>
-            <input type="password" placeholder="">
+            <input type="password" name="password" placeholder="">
         </div>
 
         <div>
             <p>Повторите пароль</p>
-            <input type="password" placeholder="">
+            <input type="password" name="password2" placeholder="">
         </div>
 
 
@@ -136,7 +137,7 @@
 <!-- ================ enter =========== -->
 
 <div id="modal_form_enter" class="form_wrapper reg">
-    <a id="modal_close" href="" class="close">
+    <a href="" class="close">
         <img src="img/close.png" alt="">
     </a>
 
@@ -149,20 +150,20 @@
         </a>    
         <div class="clear"></div>
         <ul class="social_reg">
-            <li id="fb"><a href=""></a></li>
-            <li id="vk"><a href=""></a></li>
-            <li id="tw"><a href=""></a></li>
-            <li id="goo"><a href=""></a></li>
-            <li id="ok"><a href=""></a></li>
+            <li class="fb"><a href=""></a></li>
+            <li class="vk"><a href=""></a></li>
+            <li class="tw"><a href=""></a></li>
+            <li class="goo"><a href=""></a></li>
+            <li class="ok"><a href=""></a></li>
         </ul>        
-        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="name"  placeholder="">
+            <input type="text" name="email"  placeholder="">
         </div>
         <div>
             <p>Пароль</p>
-            <input type="password" placeholder="">
+            <input type="password" name="password" placeholder="">
         </div>
 
         <a id="go6" class="forgo_pass" href="">Забыли пароль?</a>
@@ -191,10 +192,10 @@
             с ссылкой для восстановления
         </p>  
         <div class="clear"></div>      
-        <form action=""  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
         <div>
             <p>E-mail</p>
-            <input type="name"  placeholder="">
+            <input type="text" name="email"  placeholder="">
         </div>
 
         <a  id="back" class="forgo_pass" href="">Назад</a>
@@ -204,6 +205,60 @@
         </form>
     </div>
 </div>
+
+
+<!-- ================ for email recover ============== -->
+<div id="modal_form_recov2" class="form_wrapper reg2">
+    <a href="#" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+
+    <div class="form_bg reg recover2">
+        <p>
+            Восстановление <br/>
+            пароля
+        </p>
+ 
+        <div class="clear"></div>      
+        <form action="email"  enctype="multipart/form-data" method="post" novalidate="novalidate">
+        <div>
+            <p>Придумайте новый пароль</p>
+            <input type="password"  placeholder="">
+        </div>
+        <div>
+            <p>Придумайте новый пароль</p>
+            <input type="password"  placeholder="">
+        </div>
+
+        <input id="thank" type="submit" class="send reg recov2" value="Отправить">
+        <div class="clear"></div>
+        </form>
+    </div>
+</div>
+
+<!--     ======= thank ========= -->
+
+<div id="modal_form_recov3" class="form_wrapper reg2">
+    <a href="#" class="close">
+        <img src="img/close.png" alt="">
+    </a>
+
+    <div class="form_bg reg recover2 thank">
+        <p>
+            Восстановление <br/>
+            пароля
+        </p>
+ 
+        <div class="clear"></div>      
+        <p class="thanks">
+            Письмо отправлено.<br/>
+            Проверьте почту.
+        </p>
+    </div>
+</div>
+
+
+
 
 </body>
 </html>
