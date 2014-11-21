@@ -3,23 +3,26 @@
 	margin: 0!important;
 	clear: both;
 }
+
 .form_wrapper.reg{
 	width: 325px;
 	margin: 0 auto;
 }
+
 .form_bg.reg{
 	height: 389px;
 	width: 231px;
 	padding: 23px 30px 30px 30px;
 }
+
 .form_bg.reg>p{
-	
 	display: inline-block;
 	color: #333;
 	font-size: 24px;
 	text-align: left;
 	margin: 0 0 19px 0;
 }
+
 .form_bg.reg>p+a{
 	float: right;
 	color: #b2b2b2;
@@ -27,45 +30,59 @@
 	margin-top: 8px;
 	text-decoration: none;
 }
+
 .social_reg{
 	position:relative;
 	margin-bottom: 62px;
 }
+
 .social_reg li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+
 .social_reg  li, .social_reg  a{height:30px;display:block;}
 
-#fb{left:0px;width:32px;}
-#fb{background:url('../img/sprite.png') 0 0;}
-#fb:hover {
-    left: 0px;
+.fb{left:0px;width:32px;}
+
+.fb{background:url('../img/sprite.png') 0 0;}
+
+.fb:hover {
+    left: 0px;..
     width: 32px;
 }
-#fb:hover {
+
+.fb:hover {
     background: url('../img/sprite.png') 0 30px;
 }
 
-#vk{left:51px;width:32px;}
-#vk{background:url('../img/sprite.png') -32px 0;}
-#vk:hover {
+.vk{left:51px;width:32px;}
+
+.vk{background:url('../img/sprite.png') -32px 0;}
+
+.vk:hover {
     background: url('../img/sprite.png') -32px 30px;
 }
 
 
-#tw{left:102px;width:32px;}
-#tw{background:url('../img/sprite.png') -64px 0;}
-#tw:hover {
+.tw{left:102px;width:32px;}
+
+.tw{background:url('../img/sprite.png') -64px 0;}
+
+.tw:hover {
     background: url('../img/sprite.png') -64px 30px;
 }
 
-#goo{left:151px;width:32px;}
-#goo{background:url('../img/sprite.png') -96px 0;}
-#goo:hover {
+.goo{left:151px;width:32px;}
+
+.goo{background:url('../img/sprite.png') -96px 0;}
+
+.goo:hover {
     background: url('../img/sprite.png') -96px 30px;
 }
 
-#ok{left:199px;width:32px;}
-#ok{background:url('../img/sprite.png') -126px 0;}
-#ok:hover {
+.ok{left:199px;width:32px;}
+
+.ok{background:url('../img/sprite.png') -126px 0;}
+
+.ok:hover {
     background: url('../img/sprite.png') -126px 30px;
 }
 
@@ -77,6 +94,7 @@
 .form_bg.reg div input{
 	width: 199px;
 }
+
 .form_bg.reg div>p{
 	margin: 0 0 6px 0;
 }
@@ -92,12 +110,14 @@
 .form_bg.reg.login{
 	height: 330px;
 }
+
 .send.reg.log{
 	margin: 30px 0 0 0;
 	margin-right: 0;
 	float: right;
 	width: 100px;
 }
+
 .forgo_pass{
 	color: #b2b2b2;
 	font-size: 14px;
@@ -110,6 +130,7 @@
 .form_bg.reg.recover{
 	height: 322px;
 }
+
 .form_bg.reg.recover>p{
 	margin: 0px 0px 30px 0;
 }
@@ -119,11 +140,41 @@
 	margin-bottom: 15px;
 	display: block;
 	font-size: 14px;
-
 }
 
 .send.reg.recov{
 	margin: 30px 0 0 0;
 	float: right;
 	width: 114px;
+}
+
+/*=========== email recover ============*/
+
+.form_wrapper.reg2{
+	width: 325px;
+	margin: 0 auto;
+}
+
+.form_bg.reg.recover2{
+	height: 291px!important;
+	width: 232px!important;
+}
+
+.form_bg.reg.recover2>p{
+	margin: 0px 0px 12px;
+}
+
+.send.reg.recov2{
+	margin-top: 31px;
+}
+
+.form_bg.reg.recover2 .thanks{
+	text-align: center!important;
+	font-size: 14px!important;
+	color: #333;
+	margin: 102px 0 0 51px;
+}
+
+.form_bg.reg.recover2.thank{
+	height: 328px!important;
 }

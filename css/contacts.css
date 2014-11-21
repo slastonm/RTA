@@ -1,0 +1,73 @@
+.contact{
+	color:#333333;
+}
+
+.contact > h2 {
+  margin:52px 0 40px 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.contact > p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  line-height: 25px;
+  letter-spacing:1px;
+}
+
+.contact .avarka_con {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  float: left;
+  margin-right: 40px;
+}
+
+.contact-adres {
+  margin-bottom: 207px;
+  padding: 25px 0 0 0;
+}
+
+.contact-adres h3 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.coordinator {
+  font-family:  "AvenirNextCyr-Light";
+}
+
+.contact-adres p {
+  margin:  0 0 12px 0;
+}
+
+.contact-adres p a {
+  color: #76aed4;
+  margin: 20px 0 15px 0;
+  text-decoration: none;
+}
+
+.contact-adres p+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.contact br.cl_1024{
+	display:none;
+}
+
+@media (max-width: 1240px) {
+	.contact br{
+		display:none;
+	}
+
+	.contact > p {
+		letter-spacing:0px;
+	}
+  
+	.contact br.cl_1024{
+		display:inline;
+	}
+
+}

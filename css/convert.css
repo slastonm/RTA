@@ -61,6 +61,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'AvenirNextCyr-Medium';
+    src: url('../fonts/AvenirNextCyr-Medium.eot');
+    src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/AvenirNextCyr-Medium.woff') format('woff'), 
+    url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype'), 
+    url('../fonts/AvenirNextCyr-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 img {
     border: 0;
 }
@@ -73,6 +84,7 @@ footer {
 
 html,
 body {
+    color: #333;
     margin: 0;
     padding: 0;
     font-family: AvenirNextCyr-Regular;
@@ -666,7 +678,8 @@ footer .wrapper img {
 
 /*============  modal ============*/
 
-#overlay {
+#overlay,
+#overlay1 {
     z-index: 30;
     position: fixed;
     background: rgba(71, 105, 128, 0.5);
@@ -681,7 +694,9 @@ footer .wrapper img {
 #modal_form,
 #modal_form_regist,
 #modal_form_enter,
-#modal_form_recov{
+#modal_form_recov,
+#modal_form_recov2,
+#modal_form_recov3{
     position: fixed;
     top: -500px;
     left: 35%;
@@ -694,8 +709,9 @@ footer .wrapper img {
     z-index: 36;
 }
 
-#modal_form_enter{
-    z-index: 37px;
+#modal_form_enter,
+{
+    z-index: 37;
 }
 
 /*============== form style ==========*/
@@ -748,8 +764,8 @@ footer .wrapper img {
     margin: 25px 0 6px;
 }
 
-input[type=email],
-input[type=name],
+
+input[type=text],
 input[type=password] {
     width: 178px;
     height: 30px;
@@ -757,12 +773,9 @@ input[type=password] {
     padding: 0 15px;
 }
 
-input[type=email]:focus {
-    outline: 0px none;
-    border-color: #76aed4;
-}
 
-input[type=name]:focus {
+
+input[type=text]:focus {
     outline: 0px none;
     border-color: #76aed4;
 }
@@ -777,7 +790,7 @@ input[type=name]:focus {
     margin: 0 0 11px 0;
 }
 
-textarea[name=comment] {
+textarea[name=text] {
     min-width: 410px;
     min-height: 80px;
     max-width: 410px;
@@ -787,7 +800,7 @@ textarea[name=comment] {
     padding: 10px 15px;
 }
 
-textarea[name=comment]:focus {
+textarea[name=text]:focus {
     outline: 0px none;
     border-color: #76aed4;
 }
@@ -869,7 +882,7 @@ label.css-label {
 
 /*================  responsiv ===================*/
 
-@media (max-width: 1240px) {
+@media (max-width: 1279px) {
     .videos .play {
         width: 1024px;
         margin: 0 auto!important;
@@ -933,4 +946,9 @@ label.css-label {
         background: url('../img/pluss.png');
         background-position: center;
     }
+}
+
+/*========== style for all page =========*/
+.nones1024 {
+    display: none;
 }
