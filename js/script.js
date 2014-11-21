@@ -9,7 +9,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -41,7 +41,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_regist')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -72,7 +72,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_enter')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -102,7 +102,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_recov')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -133,7 +133,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send, #back').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send, #back').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_recov')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -165,7 +165,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_regist')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -197,7 +197,7 @@ $(document).ready(function() {
         });
     });
     /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    $('#modal_close, #overlay,.send, #go_enter').click( function(){ // ловим клик по крестику или подложке
+    $('.close, #overlay,.send, #go_enter').click( function(){ // ловим клик по крестику или подложке
         $('#modal_form_regist')
             .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
                 function(){ // после анимации
@@ -220,6 +220,9 @@ $(document).ready(function() {
 
 
 
+
+
+
         $(document).ready(function () {
 
             $('.user').click(function (event) {
@@ -234,3 +237,71 @@ $(document).ready(function() {
             });
 
         });
+
+
+// ====== email recov ============
+
+$(document).ready(function() { 
+    $('a#email').click( function(event){ 
+        event.preventDefault(); 
+        $('#overlay').fadeIn(400, 
+            function(){ 
+                $('#modal_form_recov2') 
+                    .css('display', 'block') // 
+                    .animate({opacity: 1, top: '10%'}, 100); // плавно прибавляем прозрачность одновременно со съезжанием вниз
+        });
+    });
+    /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
+    $('.close, #overlay,.send, #go_enter').click( function(){ // ловим клик по крестику или подложке
+        $('#modal_form_recov2')
+            .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
+                function(){ // после анимации
+                    $(this).css('display', 'none'); // делаем ему display: none;
+                    // $('#overlay').fadeOut(300); // скрываем подложку
+                }
+            );
+    });
+    
+    alignCenter($('#modal_form_recov2'));
+    function alignCenter(elem) {
+    elem.css({
+      left: ($(window).width() - elem.width()) / 2 + 'px', // получаем координату центра по ширине
+      top: ($(window).height() - elem.height()) / 2 + 'px' // получаем координату центра по высоте
+    })
+  }
+});
+
+
+
+
+
+
+$(document).ready(function() { 
+    $('#thank').click( function(event){ 
+        event.preventDefault(); 
+        $('#overlay1').fadeIn(400, 
+            function(){ 
+                $('#modal_form_recov3') 
+                    .css('display', 'block') // 
+                    .animate({opacity: 1, top: '10%'}, 100); // плавно прибавляем прозрачность одновременно со съезжанием вниз
+        });
+    });
+    /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
+    $('.close, #overlay1, #overlay').click( function(){ // ловим клик по крестику или подложке
+        $('#modal_form_recov3')
+            .animate({opacity: 0, top: '45%'}, 100,  // плавно меняем прозрачность на 0 и одновременно двигаем окно вверх
+                function(){ // после анимации
+                    $(this).css('display', 'none'); // делаем ему display: none;
+                    $('#overlay1').fadeOut(300); // скрываем подложку
+                }
+            );
+    });
+    
+    alignCenter($('#modal_form_recov3'));
+    function alignCenter(elem) {
+    elem.css({
+      left: ($(window).width() - elem.width()) / 2 + 'px', // получаем координату центра по ширине
+      top: ($(window).height() - elem.height()) / 2 + 'px' // получаем координату центра по высоте
+    })
+  }
+});
